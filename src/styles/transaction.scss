@@ -1,0 +1,66 @@
+.transaction-section {
+    padding-top: 87px;
+    min-height: 100vh;
+    position: relative;
+    z-index: 99;
+
+    .bottom-body-shade {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        pointer-events: none;
+        z-index: -1;
+    }
+
+    .transaction-parent {
+        max-width: 530px;
+        width: 100%;
+        margin: 0 auto;
+
+        .transaction-tab {
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 18px;
+            border-radius: 220px;
+            background: rgba(255, 255, 255, 0.04);
+            // backdrop-filter: blur(9px);
+            padding: 6px;
+            border: none;
+
+            .nav-item {
+                flex: 1;
+
+                .nav-link {
+                    width: 100%;
+                    padding: 20px 10px;
+                    background-color: transparent;
+                    color: #fff;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 110%;
+                    text-transform: uppercase;
+                    border: none;
+                    border-radius: 50px;
+                }
+
+            }
+
+            .nav-item.show .nav-link,
+            .nav-link.active {
+                border-radius: 50px;
+                background: #61D290;
+                color: #002B12;
+            }
+        }
+    }
+
+}
+
+
+@media (max-width:1024px){
+    .transaction-section{
+        padding-top: 47px;
+    }
+}

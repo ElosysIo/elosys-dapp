@@ -1,0 +1,52 @@
+{
+  "name": "tpl_snark_next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@web3-react/core": "8.2.0",
+    "@web3-react/injected-connector": "^6.0.7",
+    "@web3-react/metamask": "^8.2.1",
+    "@web3-react/walletconnect-connector": "^6.2.4",
+    "@web3-react/walletconnect-v2": "^8.3.7",
+    "apexcharts": "^3.41.1",
+    "bootstrap": "^5.3.2",
+    "crypto-js": "^4.2.0",
+    "idb": "^8.0.0",
+    "lodash": "^4.17.21",
+    "react-apexcharts": "^1.4.1",
+    "react-bootstrap": "^2.9.1",
+    "react-copy-to-clipboard": "^5.1.0",
+    "react-qr-code": "^2.0.12",
+    "react-redux": "^9.0.4",
+    "redux": "^5.0.0",
+    "sass": "^1.69.5",
+    "@types/level-js": "^4.0.4",
+    "bip39": "^3.1.0",
+    "dop-engineengine": "5.3.2",
+    "dop-sharedmodels": "^5.4.0",
+    "dop-wallet-old": "1.0.9",
+    "ethereumjs-wallet": "^1.0.2",
+    "ethers": "github:MuhammadWaqas4/ethers.js",
+    "ethers2": "npm:ethers@latest",
+    "fs": "^0.0.1-security",
+    "level-js": "^6.1.0",
+    "localforage": "^1.10.0",
+    "next": "latest",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "send-crypto": "^0.2.38",
+    "snarkjs": "^0.7.0",
+    "wagmi": "^1.3.3",
+    "web3": "^4.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3"
+  }
+}

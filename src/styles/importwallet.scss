@@ -1,0 +1,134 @@
+.importwallet {
+    padding-top: 89px !important;
+    padding: 124px 0px;
+    min-height: 100vh;
+    position: relative;
+
+    .innerimport {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        max-width: 538px;
+        margin: 0 auto;
+        border-radius: 10px;
+        border: 1px solid #222;
+        background: #101010;
+        // backdrop-filter: blur(7px);
+
+        .importheader {
+            border-radius: 10px;
+            background: #161616;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 14px;
+            padding: 20px 15px;
+            margin-bottom: 30px;
+            width: 100%;
+
+            .importhead {
+                font-weight: 700;
+                font-style: normal;
+                font-size: 20px;
+                line-height: 140%;
+                color: #fff;
+            }
+        }
+
+        .importbody {
+            .importpara {
+                font-weight: 400;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 110%;
+                color: #7d7d7d;
+                margin-bottom: 30px;
+            }
+
+            .material-textfield {
+                margin-bottom: 25px;
+
+                input {
+                    padding-right: 50px;
+                }
+
+                .clip {
+                    position: absolute;
+                    top: 15px;
+                    right: 18px;
+                }
+
+                .eye {
+                    position: absolute;
+                    top: 15px;
+                    right: 18px;
+                }
+            }
+
+            .common-btntwo {
+                width: 100%;
+                padding: 15px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 100%;
+            }
+        }
+    }
+
+    .form-check.radiocheck-btnn {
+        margin-bottom: 19px;
+
+        label.form-check-label.importhead {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 110%;
+            color: #fff;
+            padding-left: 5px;
+        }
+
+        .form-check-input:checked {
+            background-color: #61D290 !important;
+            border-color: #7d7d7d !important;
+            border-radius: 4px !important;
+            border: 1px solid transparent !important;
+        }
+
+        .form-check-input:focus {
+            box-shadow: none !important;
+        }
+
+        .form-check-input {
+            width: 18px;
+            height: 18px;
+            vertical-align: top;
+            background-color: var(--bs-form-check-bg);
+            background-image: var(--bs-form-check-bg-image);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            outline: none !important;
+            border-color: #3d3d3d;
+            border-radius: 4px !important;
+            border: 1px solid #3D3D3D !important;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .importwallet{
+        display: block !important;
+    }
+    .importwallet .innerimport .importheader {
+        padding: 20px 0px;
+    }
+
+    .importwallet .innerimport .importheader .importhead {
+        text-align: start;
+    }
+
+    .importwallet {
+        padding: 85px 0px;
+    }
+}

@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+
+
+
+.dark-theme {
+  --body-bg: #000 !important;
+  --border: #FFF;
+  --border1: #1B1B1B;
+  --background: #000;
+  --background-reverse: #fff;
+  --box-shadow: #FFF;
+  --text-color: #fff;
+  --text-color-reverse: #000;
+  --background-off: #070707;
+  --border2: #292929;
+  --svg-fill: #fff;
+  --background-3: transparent;
+  --background-4: #050505;
+  --background-5: #000;
+  --green-bg: #000901;
+  --green-border: #17441C;
+  --text-rgba: rgba(255, 255, 255, 0.70);
+  --warning-card-border: #44361a !important;
+
+
+
+}
+
+.light-theme {
+  --body-bg: #FFF !important;
+  --border: #000;
+  --border1: #000;
+  --background: #fff;
+  --background-reverse: #000;
+  --box-shadow: #000;
+  --text-color: #000;
+  --text-color-reverse: #fff;
+  --background-off: #EAEAEA;
+  --border2: #C6C6C6;
+  --svg-fill: #000;
+  --background-3: #EAEAEA;
+  --background-4: #EAEAEA;
+  --green-bg: #DEFFE9;
+  --green-border: transparent;
+  --text-rgba: rgba(0, 0, 0, 0.70) --warning-card-border: #fde9c2 !important;
+  --background-5: #EFEFEF;
+
+
+
+}
+
+
+.light-theme .showinlight-theme {
+  display: block !important;
+}
+
+.light-theme .noneinlight-theme {
+  display: none !important;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.margin-rght {
+  margin-left: 20px;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background: #000;
+  height: 100vh;
+}
+
+iframe {
+  display: none !important;
+  z-index: -9 !important;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p0 {
+  padding: 0px;
+}
+
+// All transitions
+div,
+ul,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+button {
+  -webkit-transition: background-color 0.7s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.common-clr {
+  color: #fff;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0;
+}
+
+
+.material-textfield {
+  position: relative;
+  width: 100%;
+
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translate(0%, -50%);
+  }
+}
+
+.material-textfield .option-field{
+  position: relative;
+  .paste-btn{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(0, -50%);
+    color: #61D290;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; 
+  }
+}
+
+.material-textfield label {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; 
+  display: block;
+  margin-bottom: 12px;
+}
+
+.material-textfield input {
+  outline: none;
+  padding: 17px 18px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 117%;
+  width: 100%;
+  box-shadow: none !important;
+  color: #fff;
+  border-radius: 10px;
+  background: #161616;
+  border: none;
+
+  &::placeholder {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 117%;
+    color: #343434;
+  }
+}
+
+
+@media (max-width: 1080px) {
+  .horizontalsss {
+    transform: rotate(90deg);
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .padd-sm {
+    padding: 0 !important;
+  }
+}
+
+.pl-2 {
+  padding-left: 10px;
+}
+
+@media (max-width: 992px) {
+  .pl-2 {
+    padding-left: 0px;
+  }
+}
+
+
+.set-cursor {
+  cursor: pointer !important;
+}
+
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s !important;
+}
+
+
+
+
+.form-check-input:checked {
+  background-color: #7d7d7d !important;
+  border-color: #7d7d7d !important;
+}
+
+.form-check-input:focus {
+  box-shadow: none !important;
+}
+
+.form-check-input {
+  --bs-form-check-bg: var(--navbar-bg);
+  width: 18px;
+  height: 18px;
+  border-radius: 0px !important;
+  vertical-align: top;
+  background-color: var(--bs-form-check-bg);
+  background-image: var(--bs-form-check-bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: var(--bs-border-width) solid var(--radio-check-border);
+  outline: none !important;
+  border-color: #3d3d3d !important;
+}
+
+/* hide arrows
+ Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0 !important;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield !important;
+}
+
+
+.checkboxmain {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  .clear {
+    clear: both;
+  }
+
+  .checkBox {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 2px var(--text-color);
+  }
+
+  .checkBox div {
+    width: 60px;
+    height: 60px;
+    background-color: var(--text-color);
+    top: -52px;
+    left: -52px;
+    position: absolute;
+    transform: rotateZ(45deg);
+    z-index: 100;
+  }
+
+  .checkBox input[type=checkbox]:checked+div {
+    left: -10px;
+    top: -10px;
+  }
+
+  .checkBox input[type=checkbox] {
+    position: absolute;
+    left: 50px;
+    visibility: hidden;
+  }
+
+  .transition {
+    transition: 300ms ease;
+  }
+
+  .checkboxpara {
+    color: var(--text-color);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117%;
+  }
+}
+
+
+
+.custom-container {
+  max-width: 1300px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+
+.common-box-style {
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  // backdrop-filter: blur(9px);
+}
+
+
+// common style modal here ..........................
+
+.common-modal-style {
+  .modal-content {
+    border-radius: 20px;
+    background: #101010;
+    // backdrop-filter: blur(9px);
+    border: none;
+    padding: 20px;
+
+  }
+
+  .modal-header {
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    border: 1px solid #222;
+    background: #121212;
+    padding: 15px;
+
+    .modal-title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 140%;
+      color: #fff;
+    }
+
+    .btn-close {
+      background: url("../../public/bg-imgs/close-circle.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+      box-shadow: none;
+      opacity: 1;
+    }
+  }
+
+  .search-field {
+    padding-left: 35px !important;
+  }
+
+  
+}
+
+.modal-backdrop.show {
+  background: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(3px);
+  opacity: 1;
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px var(--background) inset !important;
+  -webkit-text-fill-color: var(--text-color) !important;
+}
+
+
+.common-btntwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #61D290;
+  border: none !important;
+  font-style: normal;
+  color: #002B12 !important;
+  border: none;
+  padding: 10px;
+  padding: 10px;
+}
+
+
+.banner-bg{
+  position: absolute;
+  top: -78px;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: -1;
+}
